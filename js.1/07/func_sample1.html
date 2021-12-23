@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+let animals = ['ねこ', 'いぬ', 'うし', 'うま', 'ひつじ'];
+let fruits = ['アップル', 'オレンジ', 'グレープ', 'メロン'];
+let drinks = ['コーラ', 'サイダー', 'お茶', 'コーヒー'];
+
+const show_list = (items) => {
+    document.write('<ul>');
+    for (let item of items) {
+        document.write(`<li>${item}</li>`);
+    }
+    document.write('</ul>');
+};
+
+document.write('<h2>動物リスト</h2>');
+show_list(animals);
+
+document.write('<h2>フルーツリスト</h2>');
+show_list(fruits);
+
+document.write('<h2>ドリンクリスト</h2>');
+show_list(drinks);
+
+</script>
+
+</body>
+</html>

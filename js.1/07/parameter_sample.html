@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>7章課題</title>
+</head>
+
+<body>
+  <script>
+    let numbers = [100, 200, 300, 400, 500, 600];
+    let numbers2 = [30, 50, 80, 100, 82];
+
+    const getArraySum = (data) => {
+      let total = 0;
+      // foreach ($numbers as $number) {
+      for(let number of data){
+        total += number
+      }
+      return total
+    }
+  // let sum = getArraySum(numbers);
+   let sum = getArraySum(numbers2);
+   console.log(sum);
+   
+   // 指定された配列の平均値を求める関数
+    const getArrayAverage = (data) => {
+      let average = getArraySum(data) / data.length
+      return average
+    }
+   let average = getArrayAverage(numbers)
+   console.log(average);
+   
+  </script>
+</body>
+
+</html>

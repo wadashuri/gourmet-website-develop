@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+const get_apple_price = () => {
+    let now_date = new Date();
+    
+    if (now_date.getDay() === 2) {
+        // document.write(`<p>アップルの価格：200円</p>`);
+        return 200;
+    } else {
+        // document.write(`<p>アップルの価格：300円</p>`);
+        return 300;
+    }
+}
+
+let apple_price = get_apple_price();
+let orange_price = 100;
+let total_price = apple_price + orange_price;
+
+document.write(`<p>アップルの価格：${apple_price}円</p>`);
+document.write(`<p>オレンジの価格：${orange_price}円</p>`);
+document.write(`<p>合計価格：${total_price}円</p>`);
+
+</script>
+
+</body>
+</html>

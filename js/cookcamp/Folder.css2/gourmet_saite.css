@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    min-width: 1200px;
+}
+
+h2 {
+    color: Brown;
+    border-bottom: solid gray;
+}
+
+section {
+    background-image: url(../Folder.html/icon.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.gourmet {
+    display: flex;
+    justify-content: center;
+}
+
+.gourmets {
+    border: solid 1px black;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.gourmet_point {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    text-align: center;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.carousel {
+    width: 100%;
+}
+
+
+
+.slick-slide {
+    height: auto;
+}
+
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+    color: #000;
+}
+
+.slick-arrow {
+    z-index: 2;
+}
+
+#appetizer {
+    display: none;
+}
+
+#vegetable {
+    display: none;
+}
+
+#bread {
+    display: none;
+}
+
+#shrimp {
+    display: none;
+}
